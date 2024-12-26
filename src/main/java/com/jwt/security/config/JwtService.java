@@ -30,7 +30,7 @@ public class JwtService {
         return extractClaim(token, Claims::getSubject);
     }
 
-    public <T> T extractClaim(String token, Function<Claims, T> claimResolver){
+    public <T> T extractClaim(String token, Function<Claims, T> claimResolver) {
         final Claims claims = exctractAllClaims(token);
         return claimResolver.apply(claims);
     }
@@ -63,7 +63,7 @@ public class JwtService {
         return (username.equals(userDetails.getUsername())) && !isTokenExpired(token);
     }
 
-    private Claims exctractAllClaims(String token){
+    private Claims exctractAllClaims(String token) {
         return Jwts.parser()
                 .verifyWith(getSingInKey())
                 .build()
