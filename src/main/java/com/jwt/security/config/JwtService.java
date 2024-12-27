@@ -35,18 +35,30 @@ public class JwtService {
     }
 
     public String generateToken(Map<String, Objects> extraClaims, UserDetails userDetails) {
+        return buildToken(extraClaims, userDetails, jwtExpiration);
+    }
+
+    public String refreshToken(Map<String, Objects> extraClaims, UserDetails userDetails) {
+        return buildToken(extraClaims, userDetails, refreshExpiration);
+    }
+
+    public String buildToken(Map<String, Objects> extraClaims, UserDetails userDetails, long expiration) {
         return Jwts
                 .builder()
                 .claims(extraClaims)
                 .subject(userDetails.getUsername())
                 .issuedAt(new Date(System.currentTimeMillis()))
-                .expiration(new Date(System.currentTimeMillis() + jwtExpiration))
+                .expiration(new Date(System.currentTimeMillis() + expiration))
                 .signWith(getSingInKey())
                 .compact();
     }
 
     public String generateToken(UserDetails userDetails) {
         return generateToken(new HashMap<>(), userDetails);
+    }
+
+    public String refreshToken(UserDetails userDetails) {
+        return refreshToken(new HashMap<>(), userDetails);
     }
 
     private Date extractExpiration(String token) {
