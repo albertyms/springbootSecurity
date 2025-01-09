@@ -1,5 +1,6 @@
-package com.jwt.security.user;
+package com.jwt.security.repository;
 
+import com.jwt.security.model.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

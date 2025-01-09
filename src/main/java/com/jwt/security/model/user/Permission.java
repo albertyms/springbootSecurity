@@ -1,4 +1,4 @@
-package com.jwt.security.user;
+package com.jwt.security.model.user;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

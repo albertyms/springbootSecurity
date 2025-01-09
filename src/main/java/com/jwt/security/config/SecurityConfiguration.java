@@ -14,16 +14,16 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.authentication.logout.LogoutHandler;
 
-import static com.jwt.security.user.Permission.ADMIN_CREATE;
-import static com.jwt.security.user.Permission.ADMIN_DELETE;
-import static com.jwt.security.user.Permission.ADMIN_READ;
-import static com.jwt.security.user.Permission.ADMIN_UPDATE;
-import static com.jwt.security.user.Permission.MANAGER_CREATE;
-import static com.jwt.security.user.Permission.MANAGER_DELETE;
-import static com.jwt.security.user.Permission.MANAGER_READ;
-import static com.jwt.security.user.Permission.MANAGER_UPDATE;
-import static com.jwt.security.user.Role.ADMIN;
-import static com.jwt.security.user.Role.MANAGER;
+import static com.jwt.security.model.user.Permission.ADMIN_CREATE;
+import static com.jwt.security.model.user.Permission.ADMIN_DELETE;
+import static com.jwt.security.model.user.Permission.ADMIN_READ;
+import static com.jwt.security.model.user.Permission.ADMIN_UPDATE;
+import static com.jwt.security.model.user.Permission.MANAGER_CREATE;
+import static com.jwt.security.model.user.Permission.MANAGER_DELETE;
+import static com.jwt.security.model.user.Permission.MANAGER_READ;
+import static com.jwt.security.model.user.Permission.MANAGER_UPDATE;
+import static com.jwt.security.model.user.Role.ADMIN;
+import static com.jwt.security.model.user.Role.MANAGER;
 
 
 import static org.springframework.http.HttpMethod.*;

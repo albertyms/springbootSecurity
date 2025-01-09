@@ -1,6 +1,6 @@
-package com.jwt.security.user;
+package com.jwt.security.model.user;
 
-import com.jwt.security.token.Token;
+import com.jwt.security.model.token.Token;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

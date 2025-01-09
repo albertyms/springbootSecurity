@@ -1,6 +1,6 @@
 package com.jwt.security.service;
 
-import com.jwt.security.token.TokenRepository;
+import com.jwt.security.repository.TokenRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;

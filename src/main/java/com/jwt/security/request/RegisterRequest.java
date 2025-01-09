@@ -1,6 +1,6 @@
 package com.jwt.security.request;
 
-import com.jwt.security.user.Role;
+import com.jwt.security.model.user.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

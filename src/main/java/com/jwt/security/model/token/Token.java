@@ -1,6 +1,6 @@
-package com.jwt.security.token;
+package com.jwt.security.model.token;
 
-import com.jwt.security.user.User;
+import com.jwt.security.model.user.User;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

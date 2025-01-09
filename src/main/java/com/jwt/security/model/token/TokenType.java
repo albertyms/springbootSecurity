@@ -1,4 +1,4 @@
-package com.jwt.security.token;
+package com.jwt.security.model.token;
 
 public enum TokenType {
 

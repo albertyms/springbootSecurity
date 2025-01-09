@@ -1,6 +1,6 @@
 package com.jwt.security.config;
 
-import com.jwt.security.token.TokenRepository;
+import com.jwt.security.repository.TokenRepository;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

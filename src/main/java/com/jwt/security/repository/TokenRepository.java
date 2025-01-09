@@ -1,5 +1,6 @@
-package com.jwt.security.token;
+package com.jwt.security.repository;
 
+import com.jwt.security.model.token.Token;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
